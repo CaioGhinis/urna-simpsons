@@ -1,0 +1,191 @@
+@keyframes pisca{
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
+@font-face {
+    font-family: 'Simpsons';
+    src: url('Simpsonfont\ DEMO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fbb5c0;
+}
+
+.page-title{
+    position: relative;
+    top: -80px;
+    font-family: 'Simpsons';
+    font-size: 50px;
+    color: #ffec0c;
+}
+
+.urna{
+    background-color: #ffec0c;
+    padding: 30px;
+    display: flex;
+}
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #e2b303;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado{
+    background-color: #d7ad00;
+    margin-left: 30px;
+}
+
+.teclado-botao{
+    width: 70px;
+    height: 40px;
+    background-color: #3e4ea3;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.teclado-linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-branco{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.btn-corrige{
+    background-color: #fe6613;
+    color: black;
+    font-size: 15px;
+}
+
+.btn-confirma{
+    background-color: #5bb4ee;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.div-1{
+    flex: 1;
+    display: flex;
+}
+
+.div-1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+.div-1-right{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.div-1-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.div-1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-1-3{
+    height: 50px;
+}
+
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.div-1-4{
+    flex: 1;
+    line-height: 30px;
+}
+
+.div-1-image{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.div-1-image img{
+    width: 100%;
+}
+
+.div-1-image.small{
+    width: 80%;
+    font-size: 12px;
+}
+
+.div-2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding-left: 10px;
+}
+
+.aviso-grande{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aviso-gigante{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*votos*/
